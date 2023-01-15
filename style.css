@@ -64,7 +64,7 @@ body,html {
 }
 
 .wrapper {
-    width:980px;
+    width:960px;
     margin:0 auto;
 
 }
@@ -240,38 +240,40 @@ main {
   .w3-grey {
     background: linear-gradient(45deg, #EE0A78, #FF6A00);
     border-radius:25px;
-    margin:50px 0;
+    margin:25px 0;
   }
 
   .w3-grey-1 {
     background: linear-gradient(45deg, #1FA2FF, #12D8FA, #A6FFCB);
     border-radius:25px;
-    margin:50px 0;
+    margin:25px 0;               
   }
 
   .w3-grey-2 {
     background: linear-gradient(45deg,#753a88,#cc2b5e);
     border-radius:25px;
-    margin:50px 0;
+    margin:25px 0; 
   }
 
   .w3-grey-3 {
     background: linear-gradient(45deg, #ec008c, #fc6767);
     border-radius:25px;
-    margin:50px 0;
+    margin:25px 0;
   }
 
   .w3-grey-4 {
     background: linear-gradient(45deg, #45B649,#DCE35B);
     border-radius:25px;
-    margin:50px 0;
+    margin:25px 0;
   }
 
   .w3-grey-5 {
     background: linear-gradient(45deg, #2f80ed,#56ccf2);
     border-radius:25px;
-    margin:50px 0;
+    margin:25px 0;
   }
+
+
 
   .w3-border{
     background:rgb(214, 214, 214);  
@@ -587,5 +589,9 @@ a:hover {
 
 .disain {
   width:100%;
+  margin-bottom:25px;
+}
+
+.skill-heading {
   margin-bottom:25px;
 }
