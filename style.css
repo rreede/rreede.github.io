@@ -303,7 +303,7 @@ main {
   
 }
 
-p.about-me-text {display:inline; font-size:26px; color:gray;}
+.about-me-text {display:inline; font-size:24px;}
 
 .projekti-pealkiri {
   width:100%;
