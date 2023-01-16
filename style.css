@@ -287,8 +287,8 @@ main {
   }
 
   .project {
-    width:150px;
-    height:150px;
+    width:125px;
+    height:125px;
     border:1px solid lightgray;
     padding:25px;
     margin-bottom:25px;
@@ -299,8 +299,8 @@ main {
 
 .projekti-sisu {
   background-image: url("img/racehelp.png");
-  width:150px;
-  height:150px;
+  width:125px;
+  height:125px;
   background-size: cover;
   
 }
@@ -570,6 +570,7 @@ main {
 
 .apps {
   font-size:16px;
+  margin-top:25px;
   color:gray;
 }
 
