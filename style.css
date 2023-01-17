@@ -290,9 +290,9 @@ main {
     width:125px;
     height:125px;
     border:1px solid lightgray;
-    padding:25px;
+    padding:20px;
     margin-bottom:25px;
-    border-radius:25px;
+    border-radius:20px;
     display:inline-block;
     
   }
@@ -302,7 +302,16 @@ main {
   width:125px;
   height:125px;
   background-size: cover;
+  border:1px solid lightgray;
   
+}
+
+.projekti-sisu-1 {
+  background-image: url("img/phone.png");
+  width:125px;
+  height:125px;
+  background-size: cover;
+  border:1px solid lightgray;
 }
 
 .about-me-text {display:inline; font-size:24px;}
@@ -314,7 +323,10 @@ main {
   margin-top:50px;
   margin-bottom:50px;
   color:black;
-  font-size:30px;
+}
+
+.projekti-pealkiri h3 {
+    font-size:1.4em;
 }
 
 .social-media-links {
@@ -556,17 +568,24 @@ main {
 
   }
 
-
+.projects-wrapper {
+  margin: 0 auto;
+}
 
 .my-projects {
   padding-bottom:50px;
+
+}
+
+.projects-wrapper {
+  display:flex;
+  justify-content:space-evenly;
 }
 
 .my-projects-container {
-  display:flex;
-  justify-content: space-evenly;
-  flex-wrap:wrap;
+  display:inline-block;
 }
+
 
 .apps {
   font-size:16px;
