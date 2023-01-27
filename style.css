@@ -314,16 +314,15 @@ main {
   border:1px solid lightgray;
 }
 
-.about-me-text {display:inline; font-size:24px;}
+.about-me-text {display:inline; font-size:26px;}
 
 .about-me-text a {
-
-  text-decoration:underline;
   background: #8A2387;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(45deg, #45B649,#DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #45B649,#DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
 }
 
 .projekti-pealkiri {
