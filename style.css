@@ -89,7 +89,7 @@ h2 {
   color:#212121;  
 }
 
-a {
+nav a {
   text-decoration:none;
 }
 
@@ -234,7 +234,7 @@ main {
     background-image: url("img/Profiilipilt.jpg");
     margin-right:75px;
     float:left;
-    box-shadow: 0 0 6px #b6b6b6;
+    box-shadow: 0px 0px 12px #b6b6b6;
   }
 
   .w3-grey {
@@ -291,35 +291,47 @@ main {
     height:125px;
     border:1px solid lightgray;
     padding:20px;
-    margin-bottom:25px;
+    margin-bottom:6px;
     border-radius:20px;
     display:inline-block;
     
   }
 
-.projekti-sisu {
+  .about-me {
+    display:flex;
+  }
+
+.project-racehelp {
   background-image: url("img/racehelp.png");
   width:125px;
   height:125px;
-  background-size: cover;
+  background-size: contain;
   border:1px solid lightgray;
   
 }
 
-.projekti-sisu-1 {
+footer {
+  margin-bottom:50px;
+}
+
+.project-smartphone {
   background-image: url("img/phone.png");
   width:125px;
   height:125px;
-  background-size: cover;
+  background-size: contain;
   border:1px solid lightgray;
+}
+
+.profile {
+  display:inline-block;
 }
 
 .about-me-text {display:inline; font-size:26px;}
 
 .about-me-text a {
   background: #8A2387;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(45deg, #45B649,#DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #45B649,#DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(45deg, #EE0A78, #FF6A00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #EE0A78, #FF6A00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: underline;
@@ -329,8 +341,7 @@ main {
   width:100%;
   height:25px;
   text-align:center;
-  margin-top:50px;
-  margin-bottom:50px;
+  margin-top:25px;
   color:black;
 }
 
@@ -545,6 +556,13 @@ main {
 
 
   }
+  
+
+
+  .inner-wrapper {
+    margin-top:150px;
+    margin-bottom:150px;
+  }
 
  @media screen and (max-width:950px) {
     /* CSS for screens that are 320 pixels or less will be put in this section */
@@ -554,6 +572,8 @@ main {
 
     .inner-wrapper {
       padding: 0 50px; 
+
+      
     }
 
   
@@ -569,6 +589,10 @@ main {
   justify-content: center;
 }
 
+
+.about-me {
+  margin-top: 50px;
+}
 
   .about-me-text {
     display:block;
