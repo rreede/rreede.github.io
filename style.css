@@ -391,9 +391,17 @@ footer {
   border: 1px solid lightgray;
 }
 
+.project-sick-leave {
+  background-image: url("img/sickleave.png");
+  width: 125px;
+  height: 125px;
+  background-size: contain;
+  border: 1px solid lightgray;
+}
+
 .about-me-text {
   display: inline;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .about-me-text a {
