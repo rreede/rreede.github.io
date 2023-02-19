@@ -680,10 +680,12 @@ img {
 .projects-wrapper {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .my-projects-container {
   display: inline-block;
+  margin-bottom: 50px;
 }
 
 .apps {
