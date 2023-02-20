@@ -379,6 +379,14 @@ main {
   border: 1px solid lightgray;
 }
 
+.project-number-game {
+  background-image: url("img/guessnumbergame.png");
+  width: 125px;
+  height: 125px;
+  background-size: contain;
+  border: 1px solid lightgray;
+}
+
 .project-trial {
   background-image: url("img/trial.png");
   width: 125px;
