@@ -415,9 +415,17 @@ footer {
   border: 1px solid lightgray;
 }
 
+.react {
+  text-decoration: underline;
+}
+
 .about-me-text {
   display: inline;
   font-size: 24px;
+}
+.description {
+  color: gray;
+  margin-top: 10px;
 }
 
 .about-me-text a {
