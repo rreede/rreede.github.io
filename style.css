@@ -358,10 +358,12 @@ main {
 }
 
 .project {
-  width: 125px;
-  height: 125px;
-  border: 1px solid lightgray;
-  padding: 20px;
+  width: 175px;
+  height: 175px;
+  border: 1px solid rgb(205, 205, 205);
+
+  padding: 25px;
+  margin-right: 25px;
   margin-bottom: 6px;
   border-radius: 20px;
   display: inline-block;
@@ -373,26 +375,24 @@ main {
 
 .project-racehelp {
   background-image: url("img/racehelp.png");
-  width: 125px;
-  height: 125px;
   background-size: contain;
-  border: 1px solid lightgray;
+  object-fit: contain;
+}
+
+.project-traveling-journal {
+  background-image: url("img/traveling-journal.png");
+  background-size: contain;
+  object-fit: contain;
 }
 
 .project-number-game {
   background-image: url("img/guessnumbergame.png");
-  width: 125px;
-  height: 125px;
   background-size: contain;
-  border: 1px solid lightgray;
 }
 
 .project-trial {
   background-image: url("img/trial.png");
-  width: 125px;
-  height: 125px;
   background-size: contain;
-  border: 1px solid lightgray;
 }
 
 footer {
@@ -401,22 +401,14 @@ footer {
 
 .project-smartphone {
   background-image: url("img/phone.png");
-  width: 125px;
-  height: 125px;
   background-size: contain;
-  border: 1px solid lightgray;
 }
 
 .project-sick-leave {
   background-image: url("img/sickleave.png");
-  width: 125px;
-  height: 125px;
+
   background-size: contain;
   border: 1px solid lightgray;
-}
-
-.react {
-  text-decoration: underline;
 }
 
 .about-me-text {
@@ -702,6 +694,7 @@ img {
 .my-projects-container {
   display: inline-block;
   margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 .apps {
