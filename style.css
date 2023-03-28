@@ -373,6 +373,12 @@ main {
   display: flex;
 }
 
+.project-crud {
+  background-image: url("img/crud.png");
+  background-size: contain;
+  object-fit: contain;
+}
+
 .project-racehelp {
   background-image: url("img/racehelp.png");
   background-size: contain;
