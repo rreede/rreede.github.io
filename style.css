@@ -373,6 +373,12 @@ main {
   display: flex;
 }
 
+.project-movieflix {
+  background-image: url("img/movieflix.png");
+  background-size: contain;
+  object-fit: contain;
+}
+
 .project-crud {
   background-image: url("img/CRUD.png");
   background-size: contain;
