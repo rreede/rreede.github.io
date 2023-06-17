@@ -373,6 +373,12 @@ main {
   display: flex;
 }
 
+.project-moviestar {
+  background-image: url("img/moviestar.png");
+  background-size: contain;
+  object-fit: contain;
+}
+
 .project-movieflix {
   background-image: url("img/movieflix.png");
   background-size: contain;
