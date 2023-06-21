@@ -373,6 +373,13 @@ main {
   display: flex;
 }
 
+.project-inventory
+{
+  background-image: url("img/inventory.png");
+  background-size: contain;
+  object-fit: contain;
+}
+
 .project-moviestar {
   background-image: url("img/moviestar.png");
   background-size: contain;
@@ -461,6 +468,10 @@ footer {
   text-align: center;
   margin-top: 25px;
   color: black;
+}
+
+.projekti-pealkiri a {
+color:#535353;
 }
 
 .projekti-pealkiri h3 {
