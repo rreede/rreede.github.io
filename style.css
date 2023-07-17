@@ -137,6 +137,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  height:100%;
+}
+
+body {
+  min-height:100%;
+}
+
 .social-media-links li {
   margin-left: 13px;
 }
@@ -291,7 +299,7 @@ main {
   justify-content: center;
   display: flex;
   align-items: center;
-  margin: 100px 0;
+  margin: 0 0 50px 0;
 }
 
 .nav-bar {
@@ -299,9 +307,9 @@ main {
 }
 
 .profile-image {
-  width: 250px;
+  width: 275px;
   margin-bottom: 25px;
-  height: 250px;
+  height: 275px;
   background-size: cover;
   display: inline-block;
   border-radius: 250px;
@@ -371,6 +379,7 @@ main {
 
 .about-me {
   display: flex;
+  justify-content: center;
 }
 
 .project-inventory
@@ -438,7 +447,8 @@ footer {
 
 .about-me-text {
   display: inline;
-  font-size: 24px;
+  line-height:1.2em;
+  font-size: 28px;
 }
 .description {
   color: gray;
@@ -669,11 +679,17 @@ img {
 }
 
 .inner-wrapper {
-  margin-top: 150px;
+  display:flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 950px) {
-  /* CSS for screens that are 320 pixels or less will be put in this section */
+  /* CSS for screens that are 950 pixels or less will be put in this section */
+
+  .my-projects {
+    display:none;
+  }
+
 
   .wrapper {
     width: 100%;
@@ -682,7 +698,7 @@ img {
   }
 
   .inner-wrapper {
-    padding: 0 50px;
+    padding: 0 25px;
   }
 
   .profile-image {
@@ -697,13 +713,30 @@ img {
   }
 
   .about-me {
-    margin-top: 25px;
     display: block;
   }
 
   .about-me-text {
     display: block;
   }
+
+
+
+  .container-1 {
+    padding: 0 25px;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100%;
+  }
+
+  .projects-link {
+    display:none;
+  }
+  
+
+
 }
 
 .projects-wrapper {
@@ -753,4 +786,30 @@ a:hover {
 
 .skill-heading {
   margin-bottom: 25px;
+}
+
+.container-1 {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  width:100%;
+}
+
+.projects-link {
+  padding:15px 15px;
+  background: #8a2387;
+  background: -webkit-linear-gradient( 45deg, #ee0a78, #ff6a00 );
+  background: linear-gradient( 45deg, #ee0a78, #ff6a00 );
+  color:white;
+  font-weight:bold;
+  border-radius:20px;
+  text-decoration:none;
+  position:absolute;
+  width:100px;
+  text-align:center;
+  bottom:50px;
+  left:0;
+  right:0;
+  margin:0 auto;
 }
