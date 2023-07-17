@@ -683,6 +683,15 @@ img {
   justify-content: center;
 }
 
+@media screen and (max-width: 1300px) {
+
+  .projects-link {
+    display:none;
+  }
+  
+
+}
+
 @media screen and (max-width: 950px) {
   /* CSS for screens that are 950 pixels or less will be put in this section */
 
@@ -695,6 +704,7 @@ img {
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
+    margin-top:50px;
   }
 
   .inner-wrapper {
@@ -705,6 +715,7 @@ img {
     float: none;
     margin-bottom: 50px;
     margin-right: 0px;
+    margin-top:50px;
   }
 
   .profile {
@@ -714,19 +725,22 @@ img {
 
   .about-me {
     display: block;
+    margin-bottom:50px
   }
 
   .about-me-text {
-    display: block;
+    font-size:1.2em;
+    
   }
 
 
 
   .container-1 {
-    padding: 0 25px;
-    display:block;
+    
+    padding: 0 0;
+    display:none;
     align-items: center;
-    justify-content: center;
+
     height:100vh;
     width:100%;
   }
