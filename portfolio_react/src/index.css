@@ -1,0 +1,48 @@
+html,body {
+  height:100%;
+  box-sizing: border-box;
+  background: #f5f5f7;
+  font-family: "Roboto", sans-serif;
+  color:rgb(60, 60, 60);
+}
+
+main {
+  height:100%;
+  display:flex;
+  align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper {
+  display:flex;
+  gap:2rem;
+}
+
+section {
+  background:white;
+  border-radius:1rem;
+  padding:2rem;
+
+  box-shadow:0px 0px 12px rgb(214, 214, 214);
+}
+
+.section-left {
+  flex-wrap: wrap;
+
+}
+
+.section-center {
+  width:450px;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.section-right {
+  
+}
+
+.profile-img {
+  width:175px;
+  border-radius:1rem;
+}
