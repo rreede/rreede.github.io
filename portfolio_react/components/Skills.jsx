@@ -9,7 +9,6 @@ export default function Skills() {
             <p>A degree in Applied Computer Science from Tallinn University, where I studied web development and web design.
             </p>
             <p>Completed the Scrimba online front-end development course.</p>
-            <p>Projects and self study.</p>
     </section>
     )
 }
