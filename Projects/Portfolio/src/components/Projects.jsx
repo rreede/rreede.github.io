@@ -1,11 +1,19 @@
 export default function Projects() {
     return(
         <div className="projects-container">
-            <a href=''>
+            
+
+            <h2>My latest projects</h2>
+
                 <div className="project-container">
                 <p>Project 1</p>
                 </div>
-            </a>
+
+
+
+                <div className="project-container">
+                <p>Project 1</p>
+                </div>
         </div>
     )
 }
