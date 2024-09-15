@@ -1,0 +1,10 @@
+.wrapper {
+  width:900px;
+  margin: 0 auto;
+}
+
+.phone-container {
+  display:block;
+  height:200px;
+  border:1px solid red;
+}
