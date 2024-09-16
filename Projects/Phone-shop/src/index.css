@@ -75,3 +75,7 @@ nav {
 .product-image {
   width:150px;
 }
+
+.main {
+  display:flex;
+}
