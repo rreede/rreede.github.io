@@ -1,13 +1,79 @@
 body {
+  color:rgb(31, 31, 31);
   height:100vh;
+  font-size:16px;
   font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
 .main {
   gap:2em;
   display:flex;
+  justify-content: center;
   width:980px;
-  height:500px;
-  margin:0 auto;
+}
+
+.portfolio-img {
+  border-radius:1rem;
+  width:175px;
+}
+
+a {
+  text-decoration:none;
+}
+
+.about-me-container {
+  width:675px;
+}
+
+.contact-container {
+  display:flex;
+  align-items: center;
+  gap:1rem;
+  flex-direction: column;
+}
+
+.github-btn{
+  color:white;
+  background:rgb(61, 61, 61);
+  display:flex;
+  justify-content: center;
+  padding:0.5rem;
+  border-radius:1rem;
+  margin-top:1rem;
+  text-align:center;
+}
+
+.linkedin-btn{
+  color:white;
+  background:rgb(61, 61, 61);
+  display:flex;
+  padding:0.5rem;
+  justify-content: center;
+  border-radius:1rem;
+  margin-top:1rem;
+  text-align:center;
+}
+
+.project-btn {
+  display:flex;
+  justify-content: center;
+  width:260px;
+  margin:1rem 0;
+  color:white;
+  padding:1rem;
+  background:red;
+  border-radius:1rem;
+  font-weight:bold;
+  background: #fc4a1a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc4a1a, #f7b733); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc4a1a, #f7b733); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.material-symbols-outlined {
+  margin-right:0.50rem;
 }
