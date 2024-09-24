@@ -18,7 +18,8 @@ export default function AboutMe() {
 
               <Link className='project-btn' to='online/index.html'><span class="material-symbols-outlined">
 open_in_new
-</span>See my latest project here!</Link>
+</span>See my latest ReactJS project here!<br></br>
+</Link>
          </div>
     )
 }
