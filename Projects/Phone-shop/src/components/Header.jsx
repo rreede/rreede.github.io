@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+import FavouritesView from './FavouritesView'
 export default function Header() {
 
     return(
@@ -14,8 +16,8 @@ export default function Header() {
 
                         <ul>
                         
-                        <a href=""><img className='shopping-cart' src="favorite_24dp_434343_FILL0_wght400_GRAD0_opsz24.png" alt="" /></a> 
-                           <a href=""><img className='shopping-cart' src="shopping_cart_24dp_434343_FILL0_wght400_GRAD0_opsz24.png" alt="" /></a> 
+                       <li><Link to='FavouritesView'><img className='shopping-cart' src="favorite_24dp_434343_FILL0_wght400_GRAD0_opsz24.png" alt="Favourites" /></Link></li> 
+                        <li><Link to=''><img className='shopping-cart' src="shopping_cart_24dp_434343_FILL0_wght400_GRAD0_opsz24.png" alt="Shopping cart" /></Link></li>
                         </ul>
                     </nav>
             </div>
