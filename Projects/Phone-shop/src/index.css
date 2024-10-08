@@ -1,0 +1,136 @@
+body, html {
+  font-family: "Roboto";
+  color:rgb(27, 27, 27);
+
+
+}
+
+a {
+  color:rgb(27, 27, 27);
+}
+
+.wrapper {
+  display:block;
+  width:900px;
+  margin: 0 auto;
+}
+
+.wrapper section {
+  display:flex;
+  gap:2em;
+}
+
+.manufacturer-p {
+  color:gray;
+}
+
+.see-more-btn {
+  background:rgb(17, 180, 198);
+  color:white;
+  font-weight:bold;
+  padding:0.5em;
+  border-radius:1em;
+  text-align:center;
+  margin-top:10px;
+}
+
+.phone-container {
+  display:flex;
+  border-radius:1em;
+  flex-direction: column;
+  padding:2em;
+  border:1px solid lightgray;
+}
+
+.navbar {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display:inline-block;
+  margin-right:1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav {
+  display:flex;
+}
+
+.shopping-cart {
+  width:25px;
+  margin-left:25px;
+}
+
+.product-image {
+  width:150px;
+}
+
+.main {
+  display:flex;
+}
+
+.shopping-cart-sidebar {
+  box-sizing: border-box;
+  position:absolute;
+  width:500px;
+  right:0;
+  top:0;
+  padding:2em;
+  background:white;
+  border-left:1px solid lightgray;
+  height:100%;
+  margin:0;
+}
+
+.close-shopping-cart-sidebar-btn {
+  position:absolute;
+  top:1rem;
+  right:2rem;
+}
+
+.checkout-enter-btn {
+  color:white;  
+  background:rgb(6, 195, 6);
+  border:none;
+  padding:1rem;
+  border-radius:1rem;
+}
+
+.progress-bar-container {
+  gap:2rem;
+  width:600px;
+  display:flex;
+  flex-direction: row;
+}
+
+
+.progress-icon-green {
+  display:block;
+  width:5rem;
+  height:1rem;
+  background:green;
+  border-radius:1rem;
+}
+
+.progress-icon-gray {
+  display:block;
+  width:5rem;
+  height:1rem;
+  background:lightgray;
+  border-radius:1rem;
+}
+
+.step1-progress-bar {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
