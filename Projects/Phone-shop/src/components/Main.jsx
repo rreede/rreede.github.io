@@ -7,7 +7,6 @@ export default function Main() {
     return(
         <main>
             <div className="wrapper">
-                <ShoppingCart/>
                 <PhonesView/>
             </div>
         </main>

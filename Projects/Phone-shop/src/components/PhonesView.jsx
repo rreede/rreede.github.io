@@ -34,6 +34,13 @@ const phonesMapped = phones.map((phone) => (
 
     return(
         <section>
+
+            <div className="category-filter">
+                <div className="phones-filter-btn filter-pill">Phones</div>
+                <div className="phones-filter-btn filter-pill">Tablets</div>
+                <div className="phones-filter-btn filter-pill">TV</div>
+
+            </div>
             {phonesMapped}
 
         </section>

@@ -3,7 +3,7 @@ export default function Footer() {
     return(
         <footer>
             <div className="wrapper">
-             <h1>Footer</h1> 
+                <p>Phone Inc Copyrights Reserved. This is a portfolio website, no actual purchase can be made here.</p>
             </div>
         </footer>
     )

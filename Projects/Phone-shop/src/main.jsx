@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import FavouritesView from './components/FavouritesView.jsx';
 import CheckoutStep1View from './components/CheckoutStep1View.jsx';
+import CheckoutStep2View from './components/CheckoutStep2View.jsx';
+import CheckoutStep3View from './components/CheckoutStep3View.jsx';
+import OrderSuccess from './components/OrderSuccess.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +24,18 @@ const router = createBrowserRouter([
   {
     path: "/checkout-view-1",
     element: <CheckoutStep1View/>,
+  },
+  {
+    path: "/checkout-view-2",
+    element: <CheckoutStep2View/>,
+  },
+  {
+    path: "/checkout-view-3",
+    element: <CheckoutStep3View/>,
+  },
+  {
+    path: "/order-success",
+    element: <OrderSuccess/>,
   },
 ]);
 
