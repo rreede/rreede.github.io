@@ -7,6 +7,7 @@ export default function PhonesList() {
         {Phones && Phones.map(record => {
                 return(
                     <div className='productContainer' key={record.id}>
+                        <div className="product-discount-info">-20%</div>
                         <img className='' src={`/phone-images/${record.img}`} alt="" />
                        <p>{record.name}</p> 
                        <p>{record.price}$</p> 

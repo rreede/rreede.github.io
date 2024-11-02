@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Phones from './phones.json';
 import Header from "./Header";
 import Footer from "./Footer";
-
+import './Phone-shop.css'
 export default function ProductView() {
     const { id } = useParams();
 
@@ -19,6 +19,8 @@ export default function ProductView() {
                     <h1>{Product.name}</h1>
                     <p>{Product.description}</p>
                     {/* Add more details here as needed */}
+
+                    <button>Add to shopping cart</button>
                 </div>
             ) : (
                 <p>Product not found</p>

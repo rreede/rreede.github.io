@@ -134,31 +134,88 @@ a {
     border:1px solid lightgray;
     border-radius:1rem;
     padding:2rem;
-    max-width:225px;
+    max-width:200px;
     
 }
 
 header,footer {
     display:flex;
+    justify-content: space-between;
     margin:2rem 0;
+}
+
+header {
+    display:flex;
+    align-items: center;
 }
 
 .phonesListContainer {
     display:flex;
+    flex-wrap:wrap;
     gap:1rem;
 }
 
+footer {
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    color:gray;
+}
 
 .see-more-btn {
     margin-top:2rem;
+    width:100%;
     border:1px solid lightgray;
     border-radius:1rem;
-    padding:1rem;
+    padding:0.5rem 1rem;
     cursor:pointer;
+}
+
+.icons {
+    display:flex;
 }
 
 .product-view-img {
     max-width:225px;
+}
+
+.material-symbols-outlined {
+    color:rgb(70, 70, 70);
+}
+
+.filter-products{
+    border:1px solid lightgray;
+   
+    margin-bottom:1rem;
+    border-radius:1rem;
+    padding:1rem;
+}
+
+.filter-products button{
+    cursor:pointer;
+    margin-right:1rem;
+    border-radius:1rem;
+    border:1px solid lightgray;
+    color:rgb(65, 65, 65);
+}
+
+.filter-products button:hover{
+    color:white;
+    background:#4b4b4b;
+}
+
+ ul {
+    list-style-type: none
+}
+
+header ul li {
+    margin-right:0.5rem;
+}
+
+.product-discount-info{
+    max-width:50px;
+    max-height:50px;
+    border-radius:50%;
 }
 
 @media (max-width: 960px) {
