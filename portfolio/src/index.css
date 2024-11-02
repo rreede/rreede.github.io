@@ -9,8 +9,8 @@ body {
 }
 
 * {
-    margin: 0
-}
+    margin: 0;}
+
 
 .project-1-btn {
     cursor: pointer;
@@ -25,9 +25,6 @@ body {
     background: #FF5F6D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-
-
 }
 
 body {
@@ -133,7 +130,56 @@ a {
     margin-right: .5rem
 }
 
+.productContainer {
+    border:1px solid lightgray;
+    border-radius:1rem;
+    padding:2rem;
+    max-width:225px;
+    
+}
+
+header,footer {
+    display:flex;
+    margin:2rem 0;
+}
+
+.phonesListContainer {
+    display:flex;
+    gap:1rem;
+}
+
+
+.see-more-btn {
+    margin-top:2rem;
+    border:1px solid lightgray;
+    border-radius:1rem;
+    padding:1rem;
+    cursor:pointer;
+}
+
+.product-view-img {
+    max-width:225px;
+}
+
 @media (max-width: 960px) {
+
+    .project-1-btn {
+        margin: 0 auto;
+        cursor: pointer;
+        max-width:325px;
+        display:inline-block;
+        margin-top:2em;
+        font-weight:bold;
+        border:none;
+        color:white;
+        padding:1rem;
+        border-radius:1rem;
+        background: #FF5F6D;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
     .main {
         gap:2rem
     }

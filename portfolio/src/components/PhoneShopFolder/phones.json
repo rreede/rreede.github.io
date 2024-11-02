@@ -1,0 +1,18 @@
+
+[
+    {
+        "id": 0,
+        "name": "iPhone 15",
+        "price": 699,
+        "img": "iPhone_16.webp",
+        "description": "A cool phone!"
+    },
+    {
+        "id": 1,
+        "name": "Pixel 8",
+        "price": 599,
+        "img": "iPhone_16.webp",
+        "description": "A cool phone!"
+    }
+
+]
