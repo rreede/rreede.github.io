@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Phones from './phones.json';
 import Header from "./Header";
 import Footer from "./Footer";
-import './Phone-shop.css'
+
 export default function ProductView() {
     const { id } = useParams();
 

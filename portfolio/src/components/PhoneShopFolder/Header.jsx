@@ -3,7 +3,9 @@ import { Link } from "react-router-dom"
 export default function Header() {
     return(
         <>
+         <div className="wrapper">
         <header>
+           
                 <h1>Phone shop</h1>
                 <ul className='icons'>
                
@@ -12,6 +14,7 @@ export default function Header() {
                 </ul>
                 
        </header>
+       </div> 
         </>
     )
 }

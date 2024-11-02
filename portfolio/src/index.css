@@ -54,10 +54,18 @@ body {
     min-height: 100vh;
     font-size: 16px;
     font-family: Roboto;
+    
+}
+
+.full-container {
+    height:100vh;
+    width:100vw;
     display: flex;
     justify-content: center;
     align-items: center
 }
+
+/**/
 
 .main {
     gap: 3em;
@@ -162,6 +170,12 @@ footer {
     color:gray;
 }
 
+.wrapper {
+    width:850px;
+    margin:0 auto;
+    display:block;
+}
+
 .see-more-btn {
     margin-top:2rem;
     width:100%;
@@ -169,6 +183,12 @@ footer {
     border-radius:1rem;
     padding:0.5rem 1rem;
     cursor:pointer;
+}
+
+.back-to-portfolio-link {
+    position:absolute;
+    top:25px;
+    left:25px;
 }
 
 .icons {
