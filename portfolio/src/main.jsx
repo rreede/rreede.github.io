@@ -6,6 +6,7 @@ import PhoneShop from './components/PhoneShopFolder/PhoneShop.jsx'
 import ShoppingCartView1 from './components/PhoneShopFolder/ShoppingCartView1.jsx'
 import ShoppingCartView2 from './components/PhoneShopFolder/ShoppingCartView2.jsx'
 import ShoppingCartView3 from './components/PhoneShopFolder/ShoppingCartView3.jsx'
+import FavoritesView from './components/PhoneShopFolder/FavoritesView.jsx'
 
 
 import {
@@ -38,7 +39,11 @@ const router = createBrowserRouter([
   {
     path:'/phone-shop/shopping-cart-view-3/',
     element: <ShoppingCartView3/>
-  }
+  }, 
+  {
+    path:'/phone-shop/favorites-view/',
+    element: <FavoritesView/>
+  },
   
   
 ]);

@@ -5,41 +5,47 @@
         "name": "iPhone 15",
         "price": 699,
         "img": "iPhone_16.webp",
-        "description": "A cool phone!"
+        "description": "A cool phone!",
+        "specs": "8GB + 256GB"
     },
     {
         "id": 1,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
-        "description": "A cool phone!"
+        "description": "A cool phone!",
+        "specs": "8GB + 256GB"
     },
     {
         "id": 1,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
-        "description": "A cool phone!"
+        "description": "A cool phone!",
+        "specs": "8GB + 256GB"
     },
     {
         "id": 1,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
-        "description": "A cool phone!"
+        "description": "A cool phone!",
+        "specs": "8GB + 256GB"
     },
     {
         "id": 1,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
-        "description": "A cool phone!"
+        "description": "A cool phone!",
+        "specs": "8GB + 256GB"
     }, {
         "id": 1,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
-        "description": "A cool phone!"
+        "description": "A cool phone!",
+        "specs": "8GB + 256GB"
     }
 
 ]

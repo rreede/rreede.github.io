@@ -13,10 +13,15 @@ export default function ProductView() {
         <>
 
         <Header/>
-            {Product ? (
+
+        <main>
+
+            <div className="wrapper">
+                {Product ? (
                 <div>
                     <img className='product-view-img' src={`/phone-images/${Product.img}`} alt="" />
                     <h1>{Product.name}</h1>
+                    <h1>{Product.specs}</h1>
                     <p>{Product.description}</p>
                     {/* Add more details here as needed */}
 
@@ -25,6 +30,8 @@ export default function ProductView() {
             ) : (
                 <p>Product not found</p>
             )}
+</div>
+</main>
 
             <Footer/>
 
