@@ -6,10 +6,20 @@
         "price": 699,
         "img": "iPhone_16.webp",
         "description": "A cool phone!",
+        "discount": 3,
         "specs": "8GB + 256GB"
     },
     {
         "id": 1,
+        "name": "Pixel 9",
+        "price": 899,
+        "img": "Pixel_9.webp",
+        "description": "A cool phone!",
+        "discount": 15,
+        "specs": "8GB + 256GB"
+    },
+    {
+        "id": 2,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
@@ -17,7 +27,7 @@
         "specs": "8GB + 256GB"
     },
     {
-        "id": 1,
+        "id": 3,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
@@ -25,22 +35,15 @@
         "specs": "8GB + 256GB"
     },
     {
-        "id": 1,
+        "id": 4,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
-        "description": "A cool phone!",
-        "specs": "8GB + 256GB"
-    },
-    {
-        "id": 1,
-        "name": "Pixel 8",
-        "price": 599,
-        "img": "iPhone_16.webp",
+        "discount": 11,
         "description": "A cool phone!",
         "specs": "8GB + 256GB"
     }, {
-        "id": 1,
+        "id": 5,
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",

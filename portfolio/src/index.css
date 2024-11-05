@@ -143,14 +143,14 @@ a {
     border:1px solid lightgray;
     border-radius:1rem;
     padding:2rem;
-    max-width:200px;
+    flex: 0 0 32%;
+    text-align:center;
     
 }
 
 header,footer {
     display:flex;
     justify-content: space-between;
-    margin:2rem 0;
 }
 
 header {
@@ -160,6 +160,7 @@ header {
 
 .phonesListContainer {
     display:flex;
+    justify-content: center;
     flex-wrap:wrap;
     gap:1rem;
 }
@@ -172,17 +173,19 @@ footer {
 }
 
 .wrapper {
-    width:850px;
+    max-width:850px;
+    padding:1rem;
     margin:0 auto;
     display:block;
 }
 
 .see-more-btn {
-    margin-top:2rem;
+    margin-top:1rem;
     width:100%;
     border:1px solid lightgray;
     border-radius:1rem;
     padding:0.5rem 1rem;
+    background:white;
     cursor:pointer;
 }
 
@@ -191,10 +194,20 @@ footer {
     border-radius:1rem;
     background:white;
     color:gray;
+    padding:0.5rem;
+
+}
+
+.addToShoppingCart {
+    margin-top:1rem;
+    background: #035DE9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0AC3F9, #035DE9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0AC3F9, #035DE9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border:none;
+    color:white;
+    font-weight:bold;
+    border-radius:1rem;
     padding:1rem;
-    position:absolute;
-    top:25px;
-    left:25px;
 }
 
 .icons {
@@ -247,15 +260,24 @@ header ul li {
     justify-content: center;
     align-items: center;
     height:50px;
-    background:white;
-    border:1px solid lightgray;
+    background: #035DE9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0AC3F9, #035DE9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0AC3F9, #035DE9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-weight:bold;
     font-size:1rem;
-    color:gray;
+    color:white;
     border-radius:50%;
 }
 
 @media (max-width: 960px) {
+
+    .full-container {
+        height:auto;
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
 
     .project-1-btn {
         margin: 0 auto;
@@ -268,7 +290,7 @@ header ul li {
         color:white;
         padding:1rem;
         border-radius:1rem;
-        background: #FF5F6D;  /* fallback for old browsers */
+        background: #035DE9;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #0AC3F9, #035DE9);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0AC3F9, #035DE9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }

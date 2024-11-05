@@ -25,7 +25,7 @@ export default function ProductView() {
                     <p>{Product.description}</p>
                     {/* Add more details here as needed */}
 
-                    <button>Add to shopping cart</button>
+                    <button className='addToShoppingCart'>Add to shopping cart</button>
                 </div>
             ) : (
                 <p>Product not found</p>
