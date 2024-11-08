@@ -1,10 +1,21 @@
 import Phones from './phones.json'
 import { Link } from 'react-router-dom'
+import { createContext } from 'react';
+
+export const FavoriteContext = createContext();
 
 export default function PhonesList() {
 
+    let favoritesArray = []
+
     function addToFavorites(favorite) {
-        alert(favorite);
+
+       favoritesArray.push(favorite);
+
+       localStorage.setItem("favoritesLocalStorage" , favoritesArray);
+
+       console.log(localStorage.getItem('favoritesLocalStorage'));
+
     }
 
 
@@ -14,9 +25,12 @@ export default function PhonesList() {
         {Phones && Phones.map(record => {
                 return(
                     <div className='productContainer' key={record.id}>
-                        <img  onClick={()=> addToFavorites(record.id)} src='/favorite_icon.svg'></img>
+                        <img onClick={()=> addToFavorites(record.id)} src='/favorite_icon.svg'></img>
                          {record.discount && <div className="product-discount-info">-{record.discount}%</div>} 
-                        <img className='' src={`/phone-images/${record.img}`} alt="" />
+
+                         <div className="productImageContainer"><img className='productImage' src={`/phone-images/${record.img}`} alt="" /></div>
+
+                       
                        <p>{record.name}</p> 
                        <strong>{record.price}$</strong> 
 

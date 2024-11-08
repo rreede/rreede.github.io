@@ -148,6 +148,19 @@ a {
     
 }
 
+.productViewContainer {
+    display:flex;
+}
+
+.productDescription {
+    width:750px;
+}
+
+.productImage {
+    height:125px;
+    margin:0 auto;
+}
+
 header,footer {
     display:flex;
     justify-content: space-between;
@@ -190,12 +203,15 @@ footer {
 }
 
 .back-to-portfolio-link {
-    border:1px solid lightgray;
     border-radius:1rem;
     background:white;
     color:gray;
     padding:0.5rem;
 
+}
+
+.favoritesContainer img {
+    height:125px;
 }
 
 .addToShoppingCart {
@@ -215,7 +231,7 @@ footer {
 }
 
 .product-view-img {
-    max-width:225px;
+    width:225px;
 }
 
 .material-symbols-outlined {
