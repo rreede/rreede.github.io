@@ -15,9 +15,11 @@ export default function FavoritesView() {
 
         <div className="favoritesContainer" key={item.id}>
         <img src={`/phone-images/${item.img}`} alt={item.name} />
+        <div className="info">
         <p>{item.name}</p>
         <strong>{item.price}$</strong>
-              </div>
+        </div>
+     </div>
 
     ));
        

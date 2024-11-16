@@ -187,7 +187,7 @@ footer {
 
 .wrapper {
     max-width:850px;
-    padding:1rem;
+    padding:1rem 0;
     margin:0 auto;
     display:block;
 }
@@ -203,15 +203,25 @@ footer {
 }
 
 .back-to-portfolio-link {
-    border-radius:1rem;
+    margin:1rem;
+    text-align:center;
     background:white;
     color:gray;
-    padding:0.5rem;
 
+}
+
+.filteractive button {
+    color:red;
+    background:red;
 }
 
 .favoritesContainer img {
     height:125px;
+}
+
+.favoritesContainer {
+    display:flex;
+    align-items:center;
 }
 
 .addToShoppingCart {
@@ -232,6 +242,27 @@ footer {
 
 .product-view-img {
     width:225px;
+}
+
+.shoppingCartProductContainer {
+    height:125px;
+    display:flex;
+}
+
+.checkoutProgress{
+    border:1px solid lightgray;
+    height:50px;
+    border-radius:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkoutStep1 {
+    width:100px;
+    height:15px;
+    background:green;
+    border-radius:1rem;
 }
 
 .material-symbols-outlined {

@@ -6,9 +6,9 @@ export default function Header() {
          <div className="wrapper">
         <header>
            
-                <h1>Phone shop</h1>
-
-                <Link to='/' className="back-to-portfolio-link">Back to portfolio</Link>
+                <h1>📱 Tech shop</h1>
+<Link to='/phone-shop'>Home</Link>
+               
                 <ul className='icons'>
                
                     <Link to='/phone-shop/favorites-view/'><li><img src='/favorite_icon.svg'></img></li></Link>

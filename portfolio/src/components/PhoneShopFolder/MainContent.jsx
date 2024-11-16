@@ -1,19 +1,25 @@
 import PhonesList from "./PhonesList"
+import { useState } from "react";
 
 export default function MainContent() {
+
+const [filter,setFilter] = useState('All');
+
+
+
     return(
         <>
         <main>
         <div className="filter-products">
 
-            <button>Phones</button>
-            <button>Tablets</button>
-            <button>TVS</button>
-
+            <button  onClick={()=> setFilter('All')}>All</button>
+            <button  onClick={()=> setFilter('phone')}>Phones</button>
+            <button  onClick={()=> setFilter('tablet')}>Tablets</button>
+            <button onClick={()=> setFilter('tv')}>TVS</button>
         </div>
 
             <div className="phonesListContainer">
-             <PhonesList/>
+             <PhonesList filtering={filter}/>
             </div>
        </main>
         </>

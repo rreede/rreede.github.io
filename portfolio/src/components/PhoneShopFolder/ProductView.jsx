@@ -9,6 +9,20 @@ export default function ProductView() {
     // Find the product with the matching id
     const Product = Phones.find((product) => product.id == id);
 
+
+    const shoppingCartArray = [];
+
+    function addToShoppingCart(id) {
+
+        shoppingCartArray.push(id);
+
+        localStorage.setItem('shoppingCartLocalStorage', shoppingCartArray);
+
+        console.log(localStorage.getItem('shoppingCartLocalStorage'));
+
+    }
+
+
     return (
         <>
 
@@ -29,7 +43,7 @@ export default function ProductView() {
                    
                    
 
-                    <button className='addToShoppingCart'>Add to shopping cart</button>
+                    <button onClick={()=> addToShoppingCart(id)} className='addToShoppingCart'>Add to shopping cart</button>
                     </div>
                 </div>
             ) : (

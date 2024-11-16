@@ -2,6 +2,7 @@
 [
     {
         "id": 0,
+        "category": "phone",
         "name": "iPhone 15",
         "price": 699,
         "img": "iPhone_16.webp",
@@ -12,6 +13,7 @@
     {
         "id": 1,
         "name": "Pixel 9",
+        "category": "phone",
         "price": 899,
         "img": "Pixel_9.webp",
         "description": "A cool phone!",
@@ -20,6 +22,7 @@
     },
     {
         "id": 2,
+        "category": "tv",
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
@@ -28,6 +31,7 @@
     },
     {
         "id": 3,
+        "category": "tv",
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
@@ -36,6 +40,7 @@
     },
     {
         "id": 4,
+        "category": "phone",
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",
@@ -44,6 +49,7 @@
         "specs": "8GB + 256GB"
     }, {
         "id": 5,
+        "category": "tablet",
         "name": "Pixel 8",
         "price": 599,
         "img": "iPhone_16.webp",

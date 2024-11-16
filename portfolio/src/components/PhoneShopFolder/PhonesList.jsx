@@ -1,45 +1,38 @@
-import Phones from './phones.json'
-import { Link } from 'react-router-dom'
-import { createContext } from 'react';
+import Phones from './phones.json';
+import { Link } from 'react-router-dom';
 
-export const FavoriteContext = createContext();
+export default function PhonesList({ filtering }) {
+    // Filter phones based on the filtering prop
+    const filteredPhones = filtering === 'All' 
+        ? Phones 
+        : Phones.filter(item => item.category === filtering);
 
-export default function PhonesList() {
+    // Function to add items to favorites
+    const addToFavorites = (favorite) => {
+        let favoritesArray = JSON.parse(localStorage.getItem('favoritesLocalStorage')) || [];
+        if (!favoritesArray.includes(favorite)) {
+            favoritesArray.push(favorite);
+            localStorage.setItem('favoritesLocalStorage', JSON.stringify(favoritesArray));
+        }
+        console.log(localStorage.getItem('favoritesLocalStorage'));
+    };
 
-    let favoritesArray = []
-
-    function addToFavorites(favorite) {
-
-       favoritesArray.push(favorite);
-
-       localStorage.setItem("favoritesLocalStorage" , favoritesArray);
-
-       console.log(localStorage.getItem('favoritesLocalStorage'));
-
-    }
-
-
-    return(
+    return (
         <>
-        
-        {Phones && Phones.map(record => {
-                return(
-                    <div className='productContainer' key={record.id}>
-                        <img onClick={()=> addToFavorites(record.id)} src='/favorite_icon.svg'></img>
-                         {record.discount && <div className="product-discount-info">-{record.discount}%</div>} 
-
-                         <div className="productImageContainer"><img className='productImage' src={`/phone-images/${record.img}`} alt="" /></div>
-
-                       
-                       <p>{record.name}</p> 
-                       <strong>{record.price}$</strong> 
-
-                      <Link to={`/phone-shop/product/${record.id}`}> <button className='see-more-btn'>See more</button></Link>
-                     
+            {filteredPhones.map(record => (
+                <div className="productContainer" key={record.id}>
+                    <img onClick={() => addToFavorites(record.id)} src="/favorite_icon.svg" alt="Favorite icon" />
+                    {record.discount && <div className="product-discount-info">-{record.discount}%</div>}
+                    <div className="productImageContainer">
+                        <img className="productImage" src={`/phone-images/${record.img}`} alt={record.name} />
                     </div>
-                )
-            })}
-
+                    <p>{record.name}</p>
+                    <strong>{record.price}$</strong>
+                    <Link to={`/phone-shop/product/${record.id}`}>
+                        <button className="see-more-btn">See more</button>
+                    </Link>
+                </div>
+            ))}
         </>
-    )
+    );
 }
