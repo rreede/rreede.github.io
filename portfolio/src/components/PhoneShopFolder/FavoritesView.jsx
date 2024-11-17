@@ -8,7 +8,17 @@ export default function FavoritesView() {
 
     const favorites = (localStorage.getItem('favoritesLocalStorage')) || [];
 
-    
+    const shoppingCartArray = [];
+
+    function addToShoppingCart(id) {
+
+        shoppingCartArray.push(id);
+
+        localStorage.setItem('shoppingCartLocalStorage', shoppingCartArray);
+
+        console.log(localStorage.getItem('shoppingCartLocalStorage'));
+
+    }
 
     const favoriteItems = phones.filter(item=>favorites.includes(item.id)).map(item=> (
 
@@ -18,6 +28,7 @@ export default function FavoritesView() {
         <div className="info">
         <p>{item.name}</p>
         <strong>{item.price}$</strong>
+        <button onClick={()=> addToShoppingCart(item.id)} className='addToShoppingCart'>Add to shopping cart</button>
         </div>
      </div>
 

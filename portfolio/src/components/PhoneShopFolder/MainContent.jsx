@@ -12,9 +12,9 @@ const [filter,setFilter] = useState('All');
         <main>
         <div className="filter-products">
 
-            <button  onClick={()=> setFilter('All')}>All</button>
-            <button  onClick={()=> setFilter('phone')}>Phones</button>
-            <button  onClick={()=> setFilter('tablet')}>Tablets</button>
+            <button onClick={()=> setFilter('All')}>All</button>
+            <button onClick={()=> setFilter('phone')}>Phones</button>
+            <button onClick={()=> setFilter('tablet')}>Tablets</button>
             <button onClick={()=> setFilter('tv')}>TVS</button>
         </div>
 

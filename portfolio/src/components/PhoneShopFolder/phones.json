@@ -32,9 +32,9 @@
     {
         "id": 3,
         "category": "tv",
-        "name": "Pixel 8",
-        "price": 599,
-        "img": "iPhone_16.webp",
+        "name": "Samsung 6 series 4K Ultra HD",
+        "price": 999,
+        "img": "b0bd257a-eed4-4978-b58c-49705f249781.webp",
         "description": "A cool phone!",
         "specs": "8GB + 256GB"
     },
@@ -50,9 +50,9 @@
     }, {
         "id": 5,
         "category": "tablet",
-        "name": "Pixel 8",
+        "name": "Lenovo M10",
         "price": 599,
-        "img": "iPhone_16.webp",
+        "img": "503490.jpg",
         "description": "A cool phone!",
         "specs": "8GB + 256GB"
     }

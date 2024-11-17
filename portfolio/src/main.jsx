@@ -14,6 +14,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ProductView from './components/PhoneShopFolder/ProductView.jsx'
+import FinalView from './components/PhoneShopFolder/FinalView.jsx'
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path:'/phone-shop/favorites-view/',
     element: <FavoritesView/>
+  },
+  {
+    path:'/phone-shop/final-view/',
+    element: <FinalView/>
   },
   
   

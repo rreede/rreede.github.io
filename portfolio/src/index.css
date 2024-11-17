@@ -224,7 +224,12 @@ footer {
     align-items:center;
 }
 
+header a {
+    color:gray;
+}
+
 .addToShoppingCart {
+    cursor:pointer;
     margin-top:1rem;
     background: #035DE9;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0AC3F9, #035DE9);  /* Chrome 10-25, Safari 5.1-6 */
@@ -238,15 +243,22 @@ footer {
 
 .icons {
     display:flex;
+    gap:0.5rem;
 }
 
 .product-view-img {
     width:225px;
 }
 
+.checkoutStep1Description {
+    display:flex;
+    flex-direction: column;
+}
+
 .shoppingCartProductContainer {
     height:125px;
     display:flex;
+    
 }
 
 .checkoutProgress{
@@ -254,14 +266,26 @@ footer {
     height:50px;
     border-radius:1rem;
     display:flex;
+    gap:2rem;
     justify-content: center;
     align-items: center;
 }
 
+.checkout-active {
+    padding:0.25rem 1rem;
+    color:white;
+    border-radius:1rem;
+    background: -webkit-linear-gradient(to right, #0AC3F9, #035DE9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0AC3F9, #035DE9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.favoriteProductBtn {
+    width:25px;
+}
+
 .checkoutStep1 {
-    width:100px;
-    height:15px;
-    background:green;
+    
+    
     border-radius:1rem;
 }
 
@@ -295,7 +319,7 @@ footer {
 }
 
 header ul li {
-    margin-right:0.5rem;
+    
 }
 
 .product-discount-info {

@@ -5,6 +5,9 @@ import phones from './phones.json'
 
 export default function ShoppingCartView1() {
 
+    const totalPrice = '523';
+    const quantity = 12;
+
     const localShoppingCart = localStorage.getItem('shoppingCartLocalStorage')
 
     console.log(localShoppingCart)
@@ -17,10 +20,17 @@ return(
 
 <div className="shoppingCartProductContainer">
 <img src={`/phone-images/${product.img}`}></img>
+<div className="checkoutStep1Description">
 
-{product.name}
+<h1>{product.name}</h1>
+<p></p>
+<p>Price: {product.price}$</p>
+<p>Total price: {totalPrice}</p>
+<p>Quantity: {quantity}</p>
 
-{product.price}
+
+</div>
+
 
 </div>
 
@@ -40,7 +50,7 @@ return(
             <div className="wrapper">
 
                 <div className="checkoutProgress">
-                    <div className="checkoutStep1">
+                    <div className="checkoutStep1 checkout-active">
                      <p>1. Overview</p>   
                     </div>
                     <div className="checkoutStep2">
@@ -51,11 +61,11 @@ return(
                     </div>
                 </div>
 
-            <h1>Checkout Step 1</h1>
+            <h1>Checkout</h1>
 
-            {mapped}
+            {mapped ? mapped : 'The cart is empty'}
 
-            <Link to='/'><button>Checkout</button></Link>
+            <Link to='/phone-shop/shopping-cart-view-2'><button className="addToShoppingCart">To Delivery method</button></Link>
             </div>
         </main>
            
