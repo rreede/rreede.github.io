@@ -271,6 +271,20 @@ header a {
     align-items: center;
 }
 
+.product-added-to-shopping-cart {
+    background:green;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:1rem;
+    border:1px solid gray;
+    position:absolute;
+    color:white;
+    top:20px;
+    padding:1rem;
+    right:100px;
+}
+
 .checkout-active {
     padding:0.25rem 1rem;
     color:white;
