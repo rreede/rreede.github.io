@@ -1,0 +1,38 @@
+body {
+  font-family: Roboto;
+}
+
+ul {
+  list-style-type:none;
+}
+
+.add-expense-btn {
+  padding:0.25rem 1rem;
+  margin:1rem;
+  color:white;
+  font-weight:bold;
+  background:rgb(73, 171, 73);
+  border-radius:1rem;
+  border:none;
+}
+
+.delete-expense-btn {
+  padding: 0.25rem 1rem;
+  margin:1rem;
+  color:white;
+  font-weight:bold;
+  background:rgb(171, 91, 73);
+  border-radius:1rem;
+  border:none;
+}
+
+.all-expenses-table {
+  text-align:left;
+  padding:1rem;
+  margin:0 auto;
+
+}
+
+th,td {
+  padding:0 1rem;
+}
