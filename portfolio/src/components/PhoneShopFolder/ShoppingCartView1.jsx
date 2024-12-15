@@ -14,6 +14,9 @@ export default function ShoppingCartView1() {
 
 
     const mapped = phones.filter((item)=> localShoppingCart.includes(item.id)).map((product)=> {
+
+        let totalAmount =+ product.price * quantity;
+       
 return(
 
 <>
@@ -25,12 +28,18 @@ return(
 <h1>{product.name}</h1>
 <p></p>
 <p>Price: {product.price}$</p>
-<p>Total price: {totalPrice}</p>
 <p>Quantity: {quantity}</p>
 
 
-</div>
 
+
+
+
+
+
+</div>
+<input type="text" placeholder="Discount code" />
+<p>Total amount: {totalAmount} </p>
 
 </div>
 

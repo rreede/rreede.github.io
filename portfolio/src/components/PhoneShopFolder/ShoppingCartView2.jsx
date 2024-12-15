@@ -21,7 +21,14 @@ export default function ShoppingCartView2() {
                       <p>3. Payment</p>   
                     </div>
                 </div>
-<h1>Test</h1>
+<h1>Choose a delivery method:</h1>
+
+<input type="radio" id="html" name="fav_language" value="HTML"/>
+<label for="html">HTML</label><br/>
+<input type="radio" id="css" name="fav_language" value="CSS"/>
+<label for="css">CSS</label><br/>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript"/>
+<label for="javascript">JavaScript</label>
 
 
 <Link to='/phone-shop/shopping-cart-view-3'><button className="addToShoppingCart">To Payment</button></Link>

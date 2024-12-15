@@ -18,7 +18,8 @@ function App() {
         
         
         
-        <Link to='/phone-shop' style={{display: 'contents'}}><button className='project-1-btn'>See my latest ReactJS e-shop project!</button></Link>  
+        <Link to='/phone-shop' style={{display: 'contents'}}><button className='project-1-btn'>See my latest ReactJS e-shop project</button></Link>
+          
         </div>
         
         

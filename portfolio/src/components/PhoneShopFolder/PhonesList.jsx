@@ -41,6 +41,9 @@ export default function PhonesList({ filtering }) {
                     </div>
                     <p>{record.name}</p>
                     <strong>{record.price}$</strong>
+
+                    <p className='installments-text'>{Math.round(record.price /12) }$ a month for 1 year</p>
+
                     <Link to={`/phone-shop/product/${record.id}`}>
                         <button className="see-more-btn">See more</button>
                     </Link>

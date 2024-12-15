@@ -7,6 +7,7 @@ import ShoppingCartView1 from './components/PhoneShopFolder/ShoppingCartView1.js
 import ShoppingCartView2 from './components/PhoneShopFolder/ShoppingCartView2.jsx'
 import ShoppingCartView3 from './components/PhoneShopFolder/ShoppingCartView3.jsx'
 import FavoritesView from './components/PhoneShopFolder/FavoritesView.jsx'
+import BudgetTracker from './budget-tracker-project/BudgetTracker.jsx'
 
 
 import {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+  },
+  {
+    path: 'budget-tracker',
+    element: <BudgetTracker/>,
   },
   {
     path:'/phone-shop',
