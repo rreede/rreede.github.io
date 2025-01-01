@@ -273,6 +273,7 @@ header a {
 
 .product-added-to-shopping-cart {
     background:green;
+    flex-wrap:wrap;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -283,6 +284,16 @@ header a {
     top:20px;
     padding:1rem;
     right:100px;
+}
+
+.product-added-to-shopping-cart a {
+    color:white;
+    display:block;
+}
+
+.go-shopping-cart-button {
+    display:block;
+    
 }
 
 .checkout-active {
