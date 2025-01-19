@@ -22,9 +22,9 @@ export default function Project1() {
                         </div>
 
                         <div className="property-info">
-                        <p>{item.name}</p>
-                        <p>{item.price}</p>
-                        <p>{item.m2} m²</p>
+                            <p>{item.name}</p>
+                            <p>{item.price}</p>
+                            <p>{item.m2} m²</p>
                         </div>
                         <button  className='add-to-favorites-btn'>Add to favorites</button>
                        

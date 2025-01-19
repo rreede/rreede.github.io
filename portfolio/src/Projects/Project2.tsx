@@ -2,10 +2,9 @@ import { NavLink } from 'react-router';
 import './Project2.css';
 import { useState } from 'react';
 
-
 export default function Project2() {
 
-const [activeTab, setActiveTab] = useState('one');
+const [activeTab, setActiveTab] = useState(2);
 
  function AddSpending() {
         return (
@@ -18,13 +17,13 @@ const [activeTab, setActiveTab] = useState('one');
  function Component2() {
     return (
         <div>
+             <p>💵 Recent spending</p> <br/> <br/>
            <div className="finance-spending-item">
-           <p>💵 Recent spendings</p> <br/>
                 <h4>Food</h4>
+                <p>8 packs of chips</p>
                 <p>$20</p>
                 <button>Delete</button>
                 <button>Update</button>
-                
             </div>
         </div>
     )
@@ -34,16 +33,17 @@ const [activeTab, setActiveTab] = useState('one');
             <header>
                  <h2>Personal Finance Tracker</h2>
             <nav>
-                <NavLink to="/">Back to portfolio</NavLink>
-                <button onClick={()=> setActiveTab('2')}>Spendings</button>
-                <button onClick={()=> setActiveTab('1')}>Gains</button>
+                <NavLink to="/">Back to portfolio</NavLink><br/><br/>
+                <div className="nav">
+                    <button onClick={()=> setActiveTab(2)}>Spendings</button>
+                    <button onClick={()=> setActiveTab(1)}>Gains</button>
+                </div>
             </nav>
 
-    {activeTab === '1' && <AddSpending/>}
-    {activeTab === '2' && <Component2/>}
+    {activeTab === 1 && <AddSpending/>}
+    {activeTab === 2 && <Component2/>}
 
             </header>
-    
         </div>
     )
 }
