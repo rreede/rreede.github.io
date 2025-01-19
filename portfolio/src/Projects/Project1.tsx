@@ -20,8 +20,12 @@ export default function Project1() {
                                 height: '200px',
  }}>
                         </div>
-                        <h3>{item.name}</h3>
-                        <h3>{item.price}</h3>
+
+                        <div className="property-info">
+                        <p>{item.name}</p>
+                        <p>{item.price}</p>
+                        <p>{item.m2} m²</p>
+                        </div>
                         <button  className='add-to-favorites-btn'>Add to favorites</button>
                        
                         <NavLink to={`real-estate/${item.id}`}><button>See more</button></NavLink>

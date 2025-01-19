@@ -1,18 +1,17 @@
-export default function AddExpense() {
+
+
+export function AddExpense() {
 
     
     function handleSubmit() {
             
     }
 
-
     return(
         <>
 
             <form onSubmit={handleSubmit}>
-                
                 <input placeholder="Spending description" type='text' id='description'></input>
-
                 <label htmlFor="expense">Expense</label>
                 <select name="expense-type" id="">
                     <option value="">Food</option>

@@ -1,6 +1,6 @@
 .real-estate-item {
-    width:250px;
-    height:250px;  
+    display:flex;
+    flex-direction:column;
 }
 
 .real-estate-nav {
@@ -11,22 +11,25 @@
 
   .real-estate-header {
     display:flex;
+    gap:3rem;
     justify-content: space-between;
-    gap:2rem;
     flex-direction: row;
     align-items: center;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
   }
 
 .real-estate-container {
     display:flex;
+    gap:3rem;
+    align-items:center;
+    justify-content: space-between;
     flex-wrap:wrap;
     margin-bottom:1rem;
 }
 
 .real-estate-img{
-    height:200px;
-    width:200px;
+    max-height:175px;
+    max-width:175px;
     border-radius:1rem;
 }
 
@@ -64,4 +67,9 @@ nav {
     height:100px;
     width:100px;
     border-radius:1rem;
+}
+
+.property-info {
+    display:flex;
+    flex-direction:column;
 }

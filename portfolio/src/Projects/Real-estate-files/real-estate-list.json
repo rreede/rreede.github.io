@@ -1,4 +1,3 @@
-
 [
     {
     "id": 1,
@@ -8,7 +7,8 @@
     "description": "A beautiful apartment in the heart of Vilnius.",
     "image": "/patrick-perkins-iRiVzALa4pI-unsplash.jpg",
     "rooms": 2,
-    "utilities": 70
+    "utilities": 70,
+    "m2": 50
 },
 
 {
@@ -19,7 +19,8 @@
     "description": "A beautiful apartment in the heart of Vilnius.",
     "image": "/timothy-buck-psrloDbaZc8-unsplash.jpg",
     "rooms": 3,
-    "utilities": 100
+    "utilities": 100,
+    "m2": 34
 },
 
 {
@@ -30,7 +31,8 @@
     "description": "A beautiful apartment in the heart of Vilnius.",
     "image": "/minh-pham-7pCFUybP_P8-unsplash.jpg",
     "rooms": 5,
-    "utilities": 120
+    "utilities": 120,
+    "m2": 35
 }
 
 ]
