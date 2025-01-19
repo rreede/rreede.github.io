@@ -25,7 +25,7 @@ function App() {
       <h2>My skills</h2><p>HTML, CSS (Tailwind), JavaScript, React.js, Typescript, NodeJS.</p> 
 
     <p>I studied Applied Computer Science in Tallinn University. This includes studying web development, web design, graphic design and sound design. I also have experience in photography and photo editing.</p>
-    <p>I have professional experience in sales and as an e-commerce manager. My responsibilities included communicating with webshop owners and customer service teams, maintaining bug registers, and recommending website improvements to enhance functionality and user experience.</p>
+    <p>I have professional experience in sales and as an e-commerce manager. My responsibilities included communicating with webshop owners and customer service teams, maintaining bug registers, creating marketing material for leads and recommending website improvements to enhance functionality and user experience.</p>
       </div>
       
       </div>

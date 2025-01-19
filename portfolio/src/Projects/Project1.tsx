@@ -1,35 +1,33 @@
 import { NavLink } from 'react-router'
 import './project1.css'
 import data from './Real-estate-files/real-estate-list.json' 
+import Header  from './Project1-files/Header'
 
 export default function Project1() {
     return (
         <div className="project-1">
-
-            <header className='real-estate-header'>
-                <h2>Real-estate</h2>
-                <nav className='real-estate-nav'>
-                    <NavLink to="/">Back to portfolio</NavLink>
-                    <NavLink to="/project-1/apartments">Apartments</NavLink>
-                    <NavLink to="/project-1/houses">Houses</NavLink>
-                </nav>
-            </header>
-           
+           <Header/>
             <div className="real-estate-container">
 
            {data.map((item: any) => {
                 return(
                     <div className="real-estate-item" key={item.id}>
-                        <img className='real-estate-img' src={item.image} />
-                
+                        <div className='real-estate-img' style={{
+                            backgroundImage: `url(${item.image})`,
+                                backgroundSize: 'cover',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '200px',
+ }}>
+                        </div>
                         <h3>{item.name}</h3>
                         <h3>{item.price}</h3>
-                        <p>{item.description}</p>
-                        <NavLink to={`real-estate/${item.id}`}>See more</NavLink>
+                        <button  className='add-to-favorites-btn'>Add to favorites</button>
+                       
+                        <NavLink to={`real-estate/${item.id}`}><button>See more</button></NavLink>
                     </div>
                 )
            })}
-
 </div>
         </div>
     )

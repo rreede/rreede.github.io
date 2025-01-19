@@ -1,8 +1,6 @@
-
 .real-estate-item {
     width:250px;
-    height:250px;
-    
+    height:250px;  
 }
 
 .real-estate-nav {
@@ -37,5 +35,33 @@ nav {
 }
 
 .individual-image {
-    width:250px
+    width:250px;
+    border-radius:1rem;
+}
+
+.add-to-favorites-btn {
+    padding:0.5rem 1rem ;
+    margin-bottom:1rem;}
+
+.specific-info-table {
+    margin-top:1rem;
+    border-collapse: collapse;
+    width:100%;
+    text-align:center;
+}
+
+.recently-viewed-container {
+    display:flex;
+    max-height:200px;
+    gap:2rem;
+}
+
+.recently-viewed-item{
+    max-height:200px;
+}
+
+.recently-viewed-image {
+    height:100px;
+    width:100px;
+    border-radius:1rem;
 }
