@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "T-shirt",
+        "property":["red","cotton"],
+        "price": 10
+    },
+    {
+        "id": 2,
+        "name": "Pants",
+        "property":["blue","jeans"],
+        "price": 20
+    },
+    {
+        "id": 3,
+        "name": "Dress",
+        "property":["green","silk"],
+        "price": 30
+    },
+    {
+        "id": 4,
+        "name": "Sweater",
+        "property":["yellow","wool"],
+        "price": 40
+    },
+    {
+        "id": 5,
+        "name": "Jacket",
+        "property":["black","leather"],
+        "price": 50
+    }
+]
