@@ -1,6 +1,17 @@
+"use client"
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Header() {
+
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value)
+
+    console.log(searchTerm);
+  }
+
   // NavLinks should be part of the component
   type NavLink = {
     id: number;
@@ -34,7 +45,8 @@ export default function Header() {
             </div>
           ))}
         </div>
-            <Link href="/checkout-step-1">To shopping cart</Link>
+        <input value={searchTerm} onChange={handleInputChange} type="text" name="search" id="" placeholder='Search..' className='border-gray-600 p-1 rounded-md placeholder:text-gray-500' />
+            <Link href="/checkout-step-1">Shopping cart</Link>
           </div>
         </nav>
       </header>
