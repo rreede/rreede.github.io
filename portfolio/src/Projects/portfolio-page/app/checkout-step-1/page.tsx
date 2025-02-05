@@ -5,8 +5,17 @@ import Header from '../ui/Header';
 import { useEffect, useState } from 'react';
 import Link from "next/link";
 
+
+
 export default function Checkout1() {
+
+  
+
+
   const [cart, setCart] = useState<any[]>([]);
+
+  const totalPrice = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+
 
   useEffect(() => {
     // Retrieve cart data from localStorage when the component mounts
@@ -36,13 +45,18 @@ export default function Checkout1() {
                 <p>Quantity: {item.quantity}</p>
               </li>
             ))}
+
+           <p><strong>Total price:</strong></p> {totalPrice} $
+
           </ul>
         ) : (
           <p>Your cart is empty.</p>
         )}
       </div>
 
-     <button className='bg-blue-600 py-3 px-6 mt-3 text-white rounded-md'><Link href='/checkout-step-2'>To Checkout 2</Link></button>
+
+
+{cart.length > 0 &&  <button className='bg-blue-600 py-3 px-6 mt-3 text-white rounded-md'><Link href='/checkout-step-2'>To Checkout 2</Link></button>}    
 
       </div>
       </main>

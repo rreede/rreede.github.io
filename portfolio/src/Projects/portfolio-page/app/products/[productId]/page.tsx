@@ -1,14 +1,23 @@
-"use client"
+"use client";
 
-import productsList from '../../productsList'
+import productsList from '../../productsList';
 import Header from '@/app/ui/Header';
 import Image from 'next/image';
 
 export default function Details({ params }: { params: { productId: string } }) {
+
+  const handleClick = () => {
+    handleInputChange(1); // Default quantity of 1 when clicking "Add to cart"
+    handleAddedToCart();
+  };
+
+  const handleAddedToCart = () => {
+    alert('Added to cart');
+  };
+
   // Handle adding item to cart
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (quantity: number) => {
     const productId = Number(params.productId);
-    const quantity = Number(e.target.value);
 
     // Retrieve the existing cart from localStorage or initialize an empty array
     let cart = JSON.parse(localStorage.getItem('cart') || '[]');
@@ -35,7 +44,7 @@ export default function Details({ params }: { params: { productId: string } }) {
 
     // Save the updated cart to localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
-  }
+  };
 
   // Filter the product based on the productId
   const filteredItem = productsList.filter((item: any) => item.id === Number(params.productId));
@@ -45,7 +54,6 @@ export default function Details({ params }: { params: { productId: string } }) {
       <Header />
       <main>
         <div className="wrapper">
-          {/* Check if filteredItem is not empty and render */}
           {filteredItem.length > 0 ? (
             filteredItem.map((item: any) => (
               <div key={item.id} className="flex">
@@ -59,18 +67,20 @@ export default function Details({ params }: { params: { productId: string } }) {
                   />
                   <h2>{item.name}</h2>
                   <p>{item.price}$</p>
-                  <input
-                    type="number"
-                    onChange={handleInputChange}
-                    min="1"
-                    placeholder="Quantity"
-                  />
+                  
                 </div>
 
                 <div className="right-container">
                   <p>{item.description}</p>
+                  <input
+                    type="number"
+                    onChange={(e) => handleInputChange(Number(e.target.value))}
+                    min="1"
+                    className="outline-black placeholder:text-gray-800"
+                    placeholder="Quantity"
+                  />
                   <button
-                    onClick={handleInputChange}
+                    onClick={handleClick}
                     className="bg-blue-600 rounded-md py-3 px-6 mt-3 text-white"
                   >
                     Add to shopping cart
